@@ -7,6 +7,18 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <Compile Remove="Views\Weather\**" />
+      <Content Remove="Views\Weather\**" />
+      <EmbeddedResource Remove="Views\Weather\**" />
+      <None Remove="Views\Weather\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Views\index.html" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.ViewFeatures" Version="2.2.0" />
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.2" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
     </ItemGroup>
